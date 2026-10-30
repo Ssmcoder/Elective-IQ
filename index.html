@@ -1,0 +1,1287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElectiveIQ – Intelligent Elective Recommendation &amp; Academic Planning System</title>
+    <meta name="description" content="Choose Smarter. Learn Better. Build Your Future. ElectiveIQ Intelligent Elective Recommendation and Academic Planning System." />
+    <meta property="og:title" content="ElectiveIQ – Intelligent Elective Recommendation &amp; Academic Planning System" />
+    <meta property="og:description" content="Choose Smarter. Learn Better. Build Your Future. ElectiveIQ Intelligent Elective Recommendation and Academic Planning System." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="eiq-skip-link">Skip to main content</a>
+
+    <!-- Application Shell (Root Container) -->
+    <div class="eiq-app" data-sample-mode="on">
+      <!-- Hidden CSS Toggle for Sidebar -->
+      <input type="checkbox" id="eiq-sidebar-toggle" class="eiq-sidebar-toggle visually-hidden" aria-label="Toggle sidebar navigation" />
+
+      <!-- Left Sidebar Navigation -->
+      <aside class="eiq-sidebar" aria-label="Main Navigation">
+        <div class="eiq-sidebar__header">
+          <div class="eiq-brand">
+            <div class="eiq-brand__logo" aria-hidden="true">
+              <!-- Inline SVG Logo Mark -->
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <span class="eiq-brand__name">ElectiveIQ</span>
+          </div>
+          <label for="eiq-sidebar-toggle" class="eiq-sidebar__toggle-btn" title="Collapse sidebar" aria-label="Collapse sidebar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </label>
+        </div>
+
+        <nav class="eiq-sidebar__nav" aria-label="Primary Links">
+          <span class="eiq-sidebar__section-title">Overview</span>
+          <a href="#dashboard" class="eiq-sidebar__item is-active" aria-current="page">
+            <svg class="eiq-sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="9" rx="1"></rect>
+              <rect x="14" y="3" width="7" height="5" rx="1"></rect>
+              <rect x="14" y="12" width="7" height="9" rx="1"></rect>
+              <rect x="3" y="16" width="7" height="5" rx="1"></rect>
+            </svg>
+            <span class="eiq-sidebar__label">Dashboard</span>
+          </a>
+
+          <a href="#student-profile" class="eiq-sidebar__item">
+            <svg class="eiq-sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <span class="eiq-sidebar__label">Student Profile</span>
+          </a>
+
+          <a href="#recommendations" class="eiq-sidebar__item">
+            <svg class="eiq-sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span class="eiq-sidebar__label">Recommendations</span>
+          </a>
+
+          <a href="#comparison" class="eiq-sidebar__item">
+            <svg class="eiq-sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+            <span class="eiq-sidebar__label">Comparison</span>
+          </a>
+
+          <a href="#testing" class="eiq-sidebar__item">
+            <svg class="eiq-sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <span class="eiq-sidebar__label">Testing</span>
+          </a>
+        </nav>
+
+        <div class="eiq-sidebar__footer">
+          <span class="eiq-sidebar__section-title">System</span>
+          <a href="#data-status" class="eiq-sidebar__item">
+            <svg class="eiq-sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+            <span class="eiq-sidebar__label">Data Status</span>
+          </a>
+          <a href="#help" class="eiq-sidebar__item">
+            <svg class="eiq-sidebar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            <span class="eiq-sidebar__label">Help &amp; Guide</span>
+          </a>
+        </div>
+      </aside>
+
+      <!-- Main Application Container -->
+      <main id="main-content" class="eiq-main" tabindex="-1">
+        <!-- Top App Bar -->
+        <header class="eiq-topbar" aria-label="Top Utilities">
+          <div class="eiq-topbar__left">
+            <label for="eiq-sidebar-toggle" class="eiq-topbar__menu-btn" title="Open navigation" aria-label="Open navigation">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </label>
+            <div class="eiq-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              <span>ElectiveIQ Academic Planner</span>
+            </div>
+          </div>
+
+          <div class="eiq-topbar__right">
+            <span class="eiq-sample-pill">Frontend Design Preview</span>
+            <div class="eiq-pill eiq-pill--mode">
+              <span class="eiq-dot-accent" aria-hidden="true"></span>
+              <span data-bind="system.currentSemester">Semester Planning</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <div class="eiq-avatar" title="Student Initials" aria-label="Active student initials">
+              <span data-bind="student.initials">—</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Greeting Row -->
+        <section class="eiq-greeting" aria-labelledby="greeting-title">
+          <h1 id="greeting-title" class="eiq-greeting__title">
+            <span data-bind="greeting.timeOfDay">Welcome</span>,
+            <span data-bind="student.name">—</span>
+          </h1>
+          <p class="eiq-greeting__subtitle">Intelligent Elective Recommendation &amp; Academic Planning System</p>
+        </section>
+
+        <!-- ==================================================================
+             SECTION 1: DASHBOARD
+             ================================================================== -->
+        <section id="dashboard" class="eiq-section" aria-labelledby="sec-title-dashboard">
+          <div class="eiq-section__header visually-hidden">
+            <h2 id="sec-title-dashboard">Dashboard</h2>
+          </div>
+
+          <!-- Region: stats -->
+          <div data-region="stats" data-state="ready" aria-live="polite">
+            <!-- Ready State: Display Layout -->
+            <div class="eiq-state--ready">
+              <!-- Row A: Best Fit & Snapshot -->
+              <div class="eiq-grid-12">
+                <!-- Left Card: Your Best Fit -->
+                <div class="eiq-col-7">
+                  <div class="eiq-card eiq-best-fit-card">
+                    <div class="eiq-best-fit-card__top">
+                      <div class="eiq-card__header" style="margin-bottom: 0;">
+                        <div class="eiq-card__title-group">
+                          <span class="eiq-card__icon-chip" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <polygon points="12 8 8 12 12 16 12 8"></polygon>
+                            </svg>
+                          </span>
+                          <span class="eiq-card__title">Top Combination Fit</span>
+                        </div>
+                        <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                          <span aria-hidden="true">✔</span>
+                          <span data-bind="rec.validStatus">Verified Valid</span>
+                        </span>
+                      </div>
+
+                      <div style="display: flex; align-items: baseline; justify-content: space-between; margin-top: 10px;">
+                        <span style="font-size: 0.8125rem; font-weight: 700; color: var(--eiq-ink-muted); text-transform: uppercase; letter-spacing: 0.04em;">Alignment Score</span>
+                        <div style="display: flex; align-items: baseline; gap: 6px;">
+                          <span style="font-size: 1.75rem; font-weight: 800; font-variant-numeric: tabular-nums;" data-bind="rec.bestScore">—</span>
+                          <span style="font-size: 0.875rem; color: var(--eiq-ink-muted);" data-bind="rec.scoreLabel">—</span>
+                        </div>
+                      </div>
+
+                      <!-- Segmented Tick Progress Bar -->
+                      <div class="eiq-progress-segmented" style="--eiq-pct: 0;" data-score="0" aria-label="Recommendation fit score bar">
+                        <div class="eiq-progress-segmented__bar"></div>
+                      </div>
+
+                      <h3 class="eiq-best-fit-card__headline" data-bind="rec.bestTitle">—</h3>
+                      <p class="eiq-best-fit-card__desc" data-bind="rec.bestDescription">—</p>
+                    </div>
+
+                    <div class="eiq-best-fit-card__bottom">
+                      <div style="display: flex; gap: 12px; align-items: center;">
+                        <div class="eiq-has-tooltip" tabindex="0">
+                          <span style="font-size: 0.8125rem; color: var(--eiq-ink-muted); font-weight: 600;">Evaluation Model</span>
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                          </svg>
+                          <span class="eiq-tooltip" role="tooltip">Multi-factor academic scoring engine</span>
+                        </div>
+                      </div>
+                      <button type="button" class="eiq-btn eiq-btn--primary" data-action="get-recs">
+                        <span>Get Recommendations</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                          <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Right Card: Data and Test Snapshot -->
+                <div class="eiq-col-5">
+                  <div class="eiq-card" style="height: 100%; justify-content: space-between;">
+                    <div>
+                      <div class="eiq-card__header">
+                        <div class="eiq-card__title-group">
+                          <span class="eiq-card__icon-chip" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <line x1="18" y1="20" x2="18" y2="10"></line>
+                              <line x1="12" y1="20" x2="12" y2="4"></line>
+                              <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                          </span>
+                          <span class="eiq-card__title">Data &amp; Test Snapshot</span>
+                        </div>
+                        <span class="eiq-badge eiq-badge--valid" data-status="valid" data-bind="data.statusBadge">
+                          <span aria-hidden="true">✔</span>
+                          <span>Ready</span>
+                        </span>
+                      </div>
+                      <p style="font-size: 0.8125rem; color: var(--eiq-ink-muted); margin-bottom: 16px;">System catalog audit and validation metrics across current student and elective registries.</p>
+                    </div>
+
+                    <div class="eiq-stat-tiles-grid">
+                      <!-- Tile 1: Students -->
+                      <div class="eiq-stat-tile eiq-stat-tile--blue">
+                        <span class="eiq-stat-tile__label">Students</span>
+                        <span class="eiq-stat-tile__value" data-bind="stats.studentCount">—</span>
+                      </div>
+                      <!-- Tile 2: Electives -->
+                      <div class="eiq-stat-tile eiq-stat-tile--green">
+                        <span class="eiq-stat-tile__label">Electives</span>
+                        <span class="eiq-stat-tile__value" data-bind="stats.electiveCount">—</span>
+                      </div>
+                      <!-- Tile 3: Valid combinations -->
+                      <div class="eiq-stat-tile eiq-stat-tile--peach">
+                        <span class="eiq-stat-tile__label">Valid Combos</span>
+                        <span class="eiq-stat-tile__value" data-bind="stats.validCount">—</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row B: 4 Metric Cards + 1 Gradient CTA Card -->
+              <div class="eiq-grid-12" style="margin-top: 20px;">
+                <!-- Metric 1: Electives Required -->
+                <div class="eiq-col-3">
+                  <div class="eiq-metric-card">
+                    <div class="eiq-metric-card__header">
+                      <div class="eiq-card__icon-chip" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                      </div>
+                      <span class="eiq-metric-card__title">Electives Required</span>
+                    </div>
+                    <div class="eiq-metric-card__body">
+                      <span class="eiq-metric-card__value" data-bind="student.electivesRequired">—</span>
+                      <p class="eiq-metric-card__sublabel">Quota for student</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Metric 2: Average Fit Score -->
+                <div class="eiq-col-3">
+                  <div class="eiq-metric-card">
+                    <div class="eiq-metric-card__header">
+                      <div class="eiq-card__icon-chip" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                      </div>
+                      <span class="eiq-metric-card__title">Average Fit Score</span>
+                    </div>
+                    <div class="eiq-metric-card__body">
+                      <span class="eiq-metric-card__value" data-bind="stats.avgFitScore">—</span>
+                      <p class="eiq-metric-card__sublabel">Top combinations mean</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Metric 3: Weekly Hours -->
+                <div class="eiq-col-3">
+                  <div class="eiq-metric-card">
+                    <div class="eiq-metric-card__header">
+                      <div class="eiq-card__icon-chip" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <circle cx="12" cy="12" r="10"></circle>
+                          <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                      </div>
+                      <span class="eiq-metric-card__title">Weekly Hours</span>
+                    </div>
+                    <div class="eiq-metric-card__body">
+                      <span class="eiq-metric-card__value" data-bind="rec.weeklyHours">—</span>
+                      <p class="eiq-metric-card__sublabel">Workload intensity</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Metric 4: Test Pass Rate -->
+                <div class="eiq-col-3">
+                  <div class="eiq-metric-card">
+                    <div class="eiq-metric-card__header">
+                      <div class="eiq-card__icon-chip" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                          <polyline points="14 2 14 8 20 8"></polyline>
+                          <line x1="16" y1="13" x2="8" y2="13"></line>
+                          <line x1="16" y1="17" x2="8" y2="17"></line>
+                        </svg>
+                      </div>
+                      <span class="eiq-metric-card__title">Test Pass Rate</span>
+                    </div>
+                    <div class="eiq-metric-card__body">
+                      <span class="eiq-metric-card__value" data-bind="test.passRate">—</span>
+                      <p class="eiq-metric-card__sublabel">Constraint compliance</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Call to Action Card: Red-Orange Gradient -->
+                <div class="eiq-col-12" style="margin-top: 4px;">
+                  <div class="eiq-card eiq-card--gradient" style="padding: 20px 24px; flex-direction: row; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+                    <div style="display: flex; align-items: center; gap: 14px;">
+                      <span class="eiq-card__icon-chip" aria-hidden="true">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                      </span>
+                      <div>
+                        <h4 style="font-size: 1.05rem; font-weight: 800; letter-spacing: -0.01em;">Batch System Verification</h4>
+                        <p style="font-size: 0.8125rem; opacity: 0.9; margin-top: 2px;">Evaluate constraint validation and combination generation across all student profiles.</p>
+                      </div>
+                    </div>
+                    <button type="button" class="eiq-btn eiq-btn--white-outline eiq-btn--sm" data-action="run-tests">
+                      <span>Run test for all students</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Empty State -->
+            <div class="eiq-state--empty">
+              <svg class="eiq-empty-illustration" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <h3 class="eiq-empty-title">No Academic Records Available</h3>
+              <p class="eiq-empty-text">Initialize the dataset or import records to inspect elective analytics and fit snapshots.</p>
+              <button type="button" class="eiq-btn eiq-btn--secondary eiq-btn--sm" data-action="load-data">Load Data Source</button>
+            </div>
+
+            <!-- Loading State -->
+            <div class="eiq-state--loading">
+              <div class="eiq-skeleton eiq-skeleton--title"></div>
+              <div class="eiq-grid-12">
+                <div class="eiq-col-7"><div class="eiq-skeleton eiq-skeleton--card" style="height: 240px;"></div></div>
+                <div class="eiq-col-5"><div class="eiq-skeleton eiq-skeleton--card" style="height: 240px;"></div></div>
+              </div>
+            </div>
+
+            <!-- Error State -->
+            <div class="eiq-state--error">
+              <div class="eiq-error-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span>Snapshot Data Unavailable</span>
+              </div>
+              <p class="eiq-error-msg">Failed to compute summary metrics. Verify data integrity and constraint definitions.</p>
+              <button type="button" class="eiq-btn eiq-btn--secondary eiq-btn--sm" data-action="load-data">Retry Connection</button>
+            </div>
+          </div>
+
+          <!-- Region: warnings (Data Quality Amber Strip) -->
+          <div data-region="warnings" data-state="ready" aria-live="polite">
+            <div class="eiq-state--ready">
+              <details class="eiq-warning-strip">
+                <summary>
+                  <span class="eiq-badge eiq-badge--warn" data-status="warn">
+                    <span aria-hidden="true">!</span>
+                    <span>Audit Notice</span>
+                  </span>
+                  <span>Data Quality &amp; Normalization Warnings (<span data-bind="warnings.count">0</span> detected)</span>
+                </summary>
+                <ul class="eiq-warning-list" data-region="warning-list">
+                  <!-- Repeatable template: warning-item -->
+                  <template data-template="warning-item">
+                    <li class="eiq-warning-item">
+                      <span class="eiq-badge eiq-badge--warn" data-status="warn" data-bind="warning.code">!</span>
+                      <span data-bind="warning.message"></span>
+                    </li>
+                  </template>
+
+                  <!-- Rendered placeholder slot (blank / data-sample="true") -->
+                  <li class="eiq-warning-item" data-sample="true">
+                    <span class="eiq-badge eiq-badge--warn" data-status="warn" data-bind="warning.code">DQ-INFO</span>
+                    <span data-bind="warning.message">Data audit registry active. All constraint flags reported here.</span>
+                  </li>
+                </ul>
+              </details>
+            </div>
+
+            <div class="eiq-state--empty">
+              <div class="eiq-warning-strip" style="background: var(--eiq-surface-soft); border-color: var(--eiq-border);">
+                <span>No data quality anomalies or prerequisite warnings present.</span>
+              </div>
+            </div>
+
+            <div class="eiq-state--loading">
+              <div class="eiq-skeleton eiq-skeleton--text" style="width: 100%; height: 48px;"></div>
+            </div>
+
+            <div class="eiq-state--error">
+              <div class="eiq-error-title">Audit Engine Error</div>
+              <p class="eiq-error-msg">Unable to process data quality warnings registry.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================================================================
+             SECTION 2: STUDENT PROFILE
+             ================================================================== -->
+        <section id="student-profile" class="eiq-section" aria-labelledby="sec-title-profile">
+          <div class="eiq-section__header">
+            <div>
+              <h2 id="sec-title-profile" class="eiq-section__title">Student Academic Profile</h2>
+              <p class="eiq-section__subtitle">Select a student record to review academic history, goal alignment, and constraints.</p>
+            </div>
+          </div>
+
+          <!-- Region: student-select -->
+          <div data-region="student-select" data-state="ready">
+            <div class="eiq-state--ready">
+              <div class="eiq-input-wrap">
+                <svg class="eiq-input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="search" class="eiq-input-pill" placeholder="Search student by name or ID..." data-action="search-student" aria-label="Search student by name or ID" />
+              </div>
+            </div>
+
+            <div class="eiq-state--empty">
+              <input type="search" class="eiq-input-pill" placeholder="No student records loaded" disabled />
+            </div>
+
+            <div class="eiq-state--loading">
+              <div class="eiq-skeleton" style="height: 48px; border-radius: var(--eiq-r-pill);"></div>
+            </div>
+
+            <div class="eiq-state--error">
+              <div class="eiq-error-msg">Student registry index lookup failed.</div>
+            </div>
+          </div>
+
+          <!-- Region: student-profile -->
+          <div data-region="student-profile" data-state="ready" aria-live="polite">
+            <!-- Ready State: Display Layout -->
+            <div class="eiq-state--ready">
+              <div class="eiq-card">
+                <div class="eiq-card__header">
+                  <div style="display: flex; align-items: center; gap: 14px;">
+                    <div class="eiq-avatar" style="width: 52px; height: 52px; font-size: 1.15rem;">
+                      <span data-bind="student.initials">—</span>
+                    </div>
+                    <div>
+                      <div style="display: flex; align-items: center; gap: 10px;">
+                        <h3 class="eiq-card__title" style="font-size: 1.25rem;" data-bind="student.name">—</h3>
+                        <span class="eiq-chip eiq-chip--goal" data-bind="student.goal">—</span>
+                      </div>
+                      <span style="font-size: 0.8125rem; color: var(--eiq-ink-muted);">Student ID: <span data-bind="student.id">—</span></span>
+                    </div>
+                  </div>
+
+                  <div style="display: flex; align-items: center; gap: 12px;">
+                    <div class="eiq-stat-tile eiq-stat-tile--blue" style="padding: 10px 18px; min-height: auto; min-width: 110px;">
+                      <span class="eiq-stat-tile__label">CGPA</span>
+                      <span class="eiq-stat-tile__value" style="font-size: 1.5rem;" data-bind="student.cgpa">—</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="eiq-profile-grid">
+                  <!-- Cleared Subjects -->
+                  <div class="eiq-profile-group">
+                    <span class="eiq-profile-group__label">Cleared Subjects (Prerequisites Fulfilled)</span>
+                    <div class="eiq-chips-wrap" data-region="student-cleared">
+                      <!-- Repeatable template: chip-cleared -->
+                      <template data-template="chip-cleared">
+                        <span class="eiq-chip eiq-chip--cleared" data-bind="subject.name"></span>
+                      </template>
+                      <!-- Rendered placeholder slot (blank / data-sample="true") -->
+                      <span class="eiq-chip eiq-chip--cleared" data-sample="true" data-bind="subject.name">—</span>
+                    </div>
+                  </div>
+
+                  <!-- Weak Subjects -->
+                  <div class="eiq-profile-group">
+                    <span class="eiq-profile-group__label">Weak Subjects (Difficulty Sensitivity)</span>
+                    <div class="eiq-chips-wrap" data-region="student-weak">
+                      <!-- Repeatable template: chip-weak -->
+                      <template data-template="chip-weak">
+                        <span class="eiq-chip eiq-chip--weak" data-bind="subject.name"></span>
+                      </template>
+                      <!-- Rendered placeholder slot (blank / data-sample="true") -->
+                      <span class="eiq-chip eiq-chip--weak" data-sample="true" data-bind="subject.name">—</span>
+                    </div>
+                  </div>
+
+                  <!-- Workload Preference -->
+                  <div class="eiq-profile-group">
+                    <span class="eiq-profile-group__label">Workload Preference</span>
+                    <div class="eiq-segmented-control" role="radiogroup" aria-label="Workload Preference">
+                      <div class="eiq-segmented-control__item" role="radio" aria-checked="false" data-bind="student.workloadLight">Light</div>
+                      <div class="eiq-segmented-control__item is-selected" role="radio" aria-checked="true" data-bind="student.workloadModerate">Moderate</div>
+                      <div class="eiq-segmented-control__item" role="radio" aria-checked="false" data-bind="student.workloadHeavy">Heavy</div>
+                    </div>
+                  </div>
+
+                  <!-- Required Electives per Category -->
+                  <div class="eiq-profile-group" style="grid-column: 1 / -1;">
+                    <span class="eiq-profile-group__label">Required Electives Per Category Quota</span>
+                    <div class="eiq-category-tiles" data-region="student-categories">
+                      <!-- Repeatable template: category-tile -->
+                      <template data-template="category-tile">
+                        <div class="eiq-category-tile">
+                          <span class="eiq-category-tile__name" data-bind="category.name"></span>
+                          <span class="eiq-category-tile__count" data-bind="category.requiredCount"></span>
+                        </div>
+                      </template>
+                      <!-- Rendered placeholder slot (blank / data-sample="true") -->
+                      <div class="eiq-category-tile" data-sample="true">
+                        <span class="eiq-category-tile__name" data-bind="category.name">—</span>
+                        <span class="eiq-category-tile__count" data-bind="category.requiredCount">—</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Empty State -->
+            <div class="eiq-state--empty">
+              <svg class="eiq-empty-illustration" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <h3 class="eiq-empty-title">No Student Selected</h3>
+              <p class="eiq-empty-text">Select a student from the search control above to display their academic requirements.</p>
+            </div>
+
+            <!-- Loading State -->
+            <div class="eiq-state--loading">
+              <div class="eiq-skeleton eiq-skeleton--card" style="height: 200px;"></div>
+            </div>
+
+            <!-- Error State -->
+            <div class="eiq-state--error">
+              <div class="eiq-error-title">Student Profile Unavailable</div>
+              <p class="eiq-error-msg">Could not load profile attributes for the requested record.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================================================================
+             SECTION 3: RECOMMENDATIONS
+             ================================================================== -->
+        <section id="recommendations" class="eiq-section" aria-labelledby="sec-title-recs">
+          <div class="eiq-section__header">
+            <div>
+              <h2 id="sec-title-recs" class="eiq-section__title">Elective Recommendations</h2>
+              <p class="eiq-section__subtitle">Top distinct valid elective combinations meeting prerequisites, category quotas, and timetable slots.</p>
+            </div>
+            <button type="button" class="eiq-btn eiq-btn--primary eiq-btn--sm" data-action="get-recs">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+              </svg>
+              <span>Recalculate Fit</span>
+            </button>
+          </div>
+
+          <!-- Region: recommendations -->
+          <div data-region="recommendations" data-state="ready" aria-live="polite">
+            <!-- Ready State: Up to 3 Cards in Responsive Grid -->
+            <div class="eiq-state--ready">
+              <div class="eiq-recs-grid" data-region="rec-cards-container">
+                <!-- Repeatable template: rec-card -->
+                <template data-template="rec-card">
+                  <div class="eiq-card eiq-rec-card">
+                    <div class="eiq-card__header">
+                      <div class="eiq-chip eiq-chip--rank" data-bind="rec.rank"></div>
+                      <span class="eiq-badge" data-status="valid" data-bind="rec.statusBadge">
+                        <span aria-hidden="true">✔</span>
+                        <span data-bind="rec.statusText"></span>
+                      </span>
+                    </div>
+
+                    <div>
+                      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                        <span style="font-size: 0.8125rem; font-weight: 700; color: var(--eiq-ink-muted);" data-bind="rec.fitLabel"></span>
+                        <span style="font-size: 1.5rem; font-weight: 800; font-variant-numeric: tabular-nums;" data-bind="rec.score"></span>
+                      </div>
+                      <div class="eiq-progress-segmented" style="--eiq-pct: 0;" data-score="0">
+                        <div class="eiq-progress-segmented__bar"></div>
+                      </div>
+                    </div>
+
+                    <div class="eiq-rec-card__courses" data-region="card-courses">
+                      <!-- Course rows rendered here -->
+                    </div>
+
+                    <!-- Validity Checklist -->
+                    <div class="eiq-validity-list" data-region="card-validity">
+                      <!-- Validity items rendered here -->
+                    </div>
+
+                    <!-- Trade-offs Panel -->
+                    <div class="eiq-tradeoffs-box">
+                      <div class="eiq-tradeoffs-box__title">
+                        <span aria-hidden="true">!</span>
+                        <span>Trade-off Analysis</span>
+                      </div>
+                      <p data-bind="rec.tradeoffText"></p>
+                    </div>
+
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 12px; border-top: 1px solid rgba(20, 17, 16, 0.06);">
+                      <span style="font-size: 0.8125rem; color: var(--eiq-ink-muted);">Weekly Hours: <strong style="color: var(--eiq-ink);" data-bind="rec.totalHours"></strong></span>
+                      <button type="button" class="eiq-btn eiq-btn--secondary eiq-btn--sm" data-action="view-details">Details</button>
+                    </div>
+                  </div>
+                </template>
+
+                <!-- Course Row Template -->
+                <template data-template="course-row">
+                  <div class="eiq-course-row">
+                    <div class="eiq-course-row__top">
+                      <span class="eiq-course-row__title" data-bind="course.title"></span>
+                      <span class="eiq-badge" data-status="valid" data-bind="course.category"></span>
+                    </div>
+                    <div class="eiq-course-row__meta">
+                      <span>Slot: <strong data-bind="course.slot"></strong></span>
+                      <span>•</span>
+                      <span>Weekly: <strong data-bind="course.hours"></strong>h</span>
+                      <span>•</span>
+                      <span>Difficulty: <strong data-bind="course.difficulty"></strong></span>
+                    </div>
+                  </div>
+                </template>
+
+                <!-- Validity Row Template -->
+                <template data-template="validity-row">
+                  <div class="eiq-validity-item">
+                    <span data-bind="validity.rule"></span>
+                    <span class="eiq-badge" data-status="valid" data-bind="validity.status">
+                      <span aria-hidden="true">✔</span>
+                      <span data-bind="validity.label"></span>
+                    </span>
+                  </div>
+                </template>
+
+                <!-- Tradeoff Item Template -->
+                <template data-template="tradeoff-item">
+                  <li data-bind="tradeoff.desc"></li>
+                </template>
+
+                <!-- Rendered Sample Card #1 (Emphasized with accent top, data-sample="true", blank text) -->
+                <div class="eiq-card eiq-rec-card eiq-card--accent-top" data-sample="true">
+                  <div class="eiq-card__header">
+                    <div class="eiq-chip eiq-chip--rank">#1 Best Fit</div>
+                    <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                      <span aria-hidden="true">✔</span>
+                      <span data-bind="rec.statusText">Valid Combination</span>
+                    </span>
+                  </div>
+
+                  <div>
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                      <span style="font-size: 0.8125rem; font-weight: 700; color: var(--eiq-ink-muted);" data-bind="rec.fitLabel">—</span>
+                      <span style="font-size: 1.5rem; font-weight: 800; font-variant-numeric: tabular-nums;" data-bind="rec.score">—</span>
+                    </div>
+                    <div class="eiq-progress-segmented" style="--eiq-pct: 0;" data-score="0">
+                      <div class="eiq-progress-segmented__bar"></div>
+                    </div>
+                  </div>
+
+                  <div class="eiq-rec-card__courses">
+                    <div class="eiq-course-row">
+                      <div class="eiq-course-row__top">
+                        <span class="eiq-course-row__title" data-bind="course.title">—</span>
+                        <span class="eiq-badge eiq-badge--valid" data-status="valid" data-bind="course.category">—</span>
+                      </div>
+                      <div class="eiq-course-row__meta">
+                        <span>Slot: <strong data-bind="course.slot">—</strong></span>
+                        <span>•</span>
+                        <span>Weekly: <strong data-bind="course.hours">—</strong>h</span>
+                        <span>•</span>
+                        <span>Difficulty: <strong data-bind="course.difficulty">—</strong></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="eiq-validity-list">
+                    <div class="eiq-validity-item">
+                      <span>Prerequisites (HC1)</span>
+                      <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                        <span aria-hidden="true">✔</span>
+                        <span>Fulfilled</span>
+                      </span>
+                    </div>
+                    <div class="eiq-validity-item">
+                      <span>Timetable Slot Clashes (HC2)</span>
+                      <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                        <span aria-hidden="true">✔</span>
+                        <span>No Clashes</span>
+                      </span>
+                    </div>
+                    <div class="eiq-validity-item">
+                      <span>Category Quotas (HC3)</span>
+                      <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                        <span aria-hidden="true">✔</span>
+                        <span>Exact Match</span>
+                      </span>
+                    </div>
+                    <div class="eiq-validity-item">
+                      <span>Duplicate Check (HC4)</span>
+                      <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                        <span aria-hidden="true">✔</span>
+                        <span>Distinct</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="eiq-tradeoffs-box">
+                    <div class="eiq-tradeoffs-box__title">
+                      <span aria-hidden="true">!</span>
+                      <span>Trade-off Analysis</span>
+                    </div>
+                    <p data-bind="rec.tradeoffText">—</p>
+                  </div>
+
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 12px; border-top: 1px solid rgba(20, 17, 16, 0.06);">
+                    <span style="font-size: 0.8125rem; color: var(--eiq-ink-muted);">Weekly Hours: <strong style="color: var(--eiq-ink);" data-bind="rec.totalHours">—</strong></span>
+                    <button type="button" class="eiq-btn eiq-btn--primary eiq-btn--sm" data-action="select-combo">Select Fit</button>
+                  </div>
+                </div>
+
+                <!-- Rendered Sample Card #2 (data-sample="true", blank text) -->
+                <div class="eiq-card eiq-rec-card" data-sample="true">
+                  <div class="eiq-card__header">
+                    <div class="eiq-chip eiq-chip--rank">#2 Strong Fit</div>
+                    <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                      <span aria-hidden="true">✔</span>
+                      <span data-bind="rec.statusText">Valid Combination</span>
+                    </span>
+                  </div>
+
+                  <div>
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                      <span style="font-size: 0.8125rem; font-weight: 700; color: var(--eiq-ink-muted);" data-bind="rec.fitLabel">—</span>
+                      <span style="font-size: 1.5rem; font-weight: 800; font-variant-numeric: tabular-nums;" data-bind="rec.score">—</span>
+                    </div>
+                    <div class="eiq-progress-segmented" style="--eiq-pct: 0;" data-score="0">
+                      <div class="eiq-progress-segmented__bar"></div>
+                    </div>
+                  </div>
+
+                  <div class="eiq-rec-card__courses">
+                    <div class="eiq-course-row">
+                      <div class="eiq-course-row__top">
+                        <span class="eiq-course-row__title" data-bind="course.title">—</span>
+                        <span class="eiq-badge eiq-badge--valid" data-status="valid" data-bind="course.category">—</span>
+                      </div>
+                      <div class="eiq-course-row__meta">
+                        <span>Slot: <strong data-bind="course.slot">—</strong></span>
+                        <span>•</span>
+                        <span>Weekly: <strong data-bind="course.hours">—</strong>h</span>
+                        <span>•</span>
+                        <span>Difficulty: <strong data-bind="course.difficulty">—</strong></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="eiq-validity-list">
+                    <div class="eiq-validity-item">
+                      <span>Prerequisites (HC1)</span>
+                      <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                        <span aria-hidden="true">✔</span>
+                        <span>Fulfilled</span>
+                      </span>
+                    </div>
+                    <div class="eiq-validity-item">
+                      <span>Timetable Slot Clashes (HC2)</span>
+                      <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                        <span aria-hidden="true">✔</span>
+                        <span>No Clashes</span>
+                      </span>
+                    </div>
+                    <div class="eiq-validity-item">
+                      <span>Category Quotas (HC3)</span>
+                      <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                        <span aria-hidden="true">✔</span>
+                        <span>Exact Match</span>
+                      </span>
+                    </div>
+                    <div class="eiq-validity-item">
+                      <span>Duplicate Check (HC4)</span>
+                      <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                        <span aria-hidden="true">✔</span>
+                        <span>Distinct</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="eiq-tradeoffs-box">
+                    <div class="eiq-tradeoffs-box__title">
+                      <span aria-hidden="true">!</span>
+                      <span>Trade-off Analysis</span>
+                    </div>
+                    <p data-bind="rec.tradeoffText">—</p>
+                  </div>
+
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 12px; border-top: 1px solid rgba(20, 17, 16, 0.06);">
+                    <span style="font-size: 0.8125rem; color: var(--eiq-ink-muted);">Weekly Hours: <strong style="color: var(--eiq-ink);" data-bind="rec.totalHours">—</strong></span>
+                    <button type="button" class="eiq-btn eiq-btn--secondary eiq-btn--sm" data-action="select-combo">Select Fit</button>
+                  </div>
+                </div>
+
+                <!-- Rendered Sample Card #3 (data-sample="true", blank text) -->
+                <div class="eiq-card eiq-rec-card" data-sample="true">
+                  <div class="eiq-card__header">
+                    <div class="eiq-chip eiq-chip--rank">#3 Moderate Fit</div>
+                    <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                      <span aria-hidden="true">✔</span>
+                      <span data-bind="rec.statusText">Valid Combination</span>
+                    </span>
+                  </div>
+
+                  <div>
+                    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+                      <span style="font-size: 0.8125rem; font-weight: 700; color: var(--eiq-ink-muted);" data-bind="rec.fitLabel">—</span>
+                      <span style="font-size: 1.5rem; font-weight: 800; font-variant-numeric: tabular-nums;" data-bind="rec.score">—</span>
+                    </div>
+                    <div class="eiq-progress-segmented" style="--eiq-pct: 0;" data-score="0">
+                      <div class="eiq-progress-segmented__bar"></div>
+                    </div>
+                  </div>
+
+                  <div class="eiq-rec-card__courses">
+                    <div class="eiq-course-row">
+                      <div class="eiq-course-row__top">
+                        <span class="eiq-course-row__title" data-bind="course.title">—</span>
+                        <span class="eiq-badge eiq-badge--valid" data-status="valid" data-bind="course.category">—</span>
+                      </div>
+                      <div class="eiq-course-row__meta">
+                        <span>Slot: <strong data-bind="course.slot">—</strong></span>
+                        <span>•</span>
+                        <span>Weekly: <strong data-bind="course.hours">—</strong>h</span>
+                        <span>•</span>
+                        <span>Difficulty: <strong data-bind="course.difficulty">—</strong></span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="eiq-validity-list">
+                    <div class="eiq-validity-item">
+                      <span>Prerequisites (HC1)</span>
+                      <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                        <span aria-hidden="true">✔</span>
+                        <span>Fulfilled</span>
+                      </span>
+                    </div>
+                    <div class="eiq-validity-item">
+                      <span>Timetable Slot Clashes (HC2)</span>
+                      <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                        <span aria-hidden="true">✔</span>
+                        <span>No Clashes</span>
+                      </span>
+                    </div>
+                    <div class="eiq-validity-item">
+                      <span>Category Quotas (HC3)</span>
+                      <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                        <span aria-hidden="true">✔</span>
+                        <span>Exact Match</span>
+                      </span>
+                    </div>
+                    <div class="eiq-validity-item">
+                      <span>Duplicate Check (HC4)</span>
+                      <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                        <span aria-hidden="true">✔</span>
+                        <span>Distinct</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="eiq-tradeoffs-box">
+                    <div class="eiq-tradeoffs-box__title">
+                      <span aria-hidden="true">!</span>
+                      <span>Trade-off Analysis</span>
+                    </div>
+                    <p data-bind="rec.tradeoffText">—</p>
+                  </div>
+
+                  <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 12px; border-top: 1px solid rgba(20, 17, 16, 0.06);">
+                    <span style="font-size: 0.8125rem; color: var(--eiq-ink-muted);">Weekly Hours: <strong style="color: var(--eiq-ink);" data-bind="rec.totalHours">—</strong></span>
+                    <button type="button" class="eiq-btn eiq-btn--secondary eiq-btn--sm" data-action="select-combo">Select Fit</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Unmet Needs Variant Message Panel -->
+              <div class="eiq-unmet-card" style="margin-top: 24px;" data-sample="true">
+                <div class="eiq-unmet-card__title">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                  </svg>
+                  <span>Unmet Constraint Resolution</span>
+                </div>
+                <p style="font-size: 0.875rem;" data-bind="unmet.reason">Constraint audit identifies infeasible requirements for full combination formation.</p>
+                <div class="eiq-unmet-card__unlock">
+                  <span>What would unlock this?</span>
+                  <span data-bind="unmet.unlockTip">—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Empty State -->
+            <div class="eiq-state--empty">
+              <svg class="eiq-empty-illustration" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <h3 class="eiq-empty-title">No Recommendations Generated</h3>
+              <p class="eiq-empty-text">Select an active student and initiate ranking to evaluate academic course combinations.</p>
+              <button type="button" class="eiq-btn eiq-btn--primary eiq-btn--sm" data-action="get-recs">Generate Recommendations</button>
+            </div>
+
+            <!-- Loading State -->
+            <div class="eiq-state--loading">
+              <div class="eiq-grid-12">
+                <div class="eiq-col-4"><div class="eiq-skeleton eiq-skeleton--card" style="height: 380px;"></div></div>
+                <div class="eiq-col-4"><div class="eiq-skeleton eiq-skeleton--card" style="height: 380px;"></div></div>
+                <div class="eiq-col-4"><div class="eiq-skeleton eiq-skeleton--card" style="height: 380px;"></div></div>
+              </div>
+            </div>
+
+            <!-- Error State -->
+            <div class="eiq-state--error">
+              <div class="eiq-error-title">Recommendation Engine Fault</div>
+              <p class="eiq-error-msg">A failure occurred while calculating combination combinations.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================================================================
+             SECTION 4: COMPARISON
+             ================================================================== -->
+        <section id="comparison" class="eiq-section" aria-labelledby="sec-title-comparison">
+          <div class="eiq-section__header">
+            <div>
+              <h2 id="sec-title-comparison" class="eiq-section__title">Combination Comparison</h2>
+              <p class="eiq-section__subtitle">Side-by-side analysis of candidate combinations across criteria, balance, and constraints.</p>
+            </div>
+          </div>
+
+          <!-- Region: compare-table -->
+          <div data-region="compare-table" data-state="ready" aria-live="polite">
+            <!-- Ready State: Responsive Scrollable Table -->
+            <div class="eiq-state--ready">
+              <div class="eiq-card" style="padding: 0; overflow: hidden;">
+                <div class="eiq-table-container">
+                  <table class="eiq-table" aria-label="Elective Combinations Comparison">
+                    <caption class="visually-hidden">Comparison of top elective combinations</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col" class="is-sticky">Evaluation Criteria</th>
+                        <th scope="col">
+                          <span class="eiq-chip eiq-chip--rank">#1 Best Fit</span>
+                        </th>
+                        <th scope="col">
+                          <span class="eiq-chip eiq-chip--rank">#2 Strong Fit</span>
+                        </th>
+                        <th scope="col">
+                          <span class="eiq-chip eiq-chip--rank">#3 Moderate Fit</span>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Repeatable template: compare-row -->
+                      <template data-template="compare-row">
+                        <tr>
+                          <th scope="row" class="is-sticky" data-bind="compare.criterion"></th>
+                          <td data-bind="compare.c1"></td>
+                          <td data-bind="compare.c2"></td>
+                          <td data-bind="compare.c3"></td>
+                        </tr>
+                      </template>
+
+                      <!-- Rendered placeholder rows (blank / data-sample="true") -->
+                      <tr data-sample="true">
+                        <th scope="row" class="is-sticky">Overall Fit Score</th>
+                        <td class="eiq-table-highlight">
+                          <span aria-hidden="true">✔</span>
+                          <span data-bind="c1.score">—</span>
+                        </td>
+                        <td data-bind="c2.score">—</td>
+                        <td data-bind="c3.score">—</td>
+                      </tr>
+                      <tr data-sample="true">
+                        <th scope="row" class="is-sticky">Career Match (40%)</th>
+                        <td data-bind="c1.career">—</td>
+                        <td data-bind="c2.career">—</td>
+                        <td data-bind="c3.career">—</td>
+                      </tr>
+                      <tr data-sample="true">
+                        <th scope="row" class="is-sticky">Skills Overlap (25%)</th>
+                        <td data-bind="c1.skills">—</td>
+                        <td data-bind="c2.skills">—</td>
+                        <td data-bind="c3.skills">—</td>
+                      </tr>
+                      <tr data-sample="true">
+                        <th scope="row" class="is-sticky">Academic Suitability (20%)</th>
+                        <td data-bind="c1.academic">—</td>
+                        <td data-bind="c2.academic">—</td>
+                        <td data-bind="c3.academic">—</td>
+                      </tr>
+                      <tr data-sample="true">
+                        <th scope="row" class="is-sticky">Workload Fit (15%)</th>
+                        <td data-bind="c1.workload">—</td>
+                        <td data-bind="c2.workload">—</td>
+                        <td data-bind="c3.workload">—</td>
+                      </tr>
+                      <tr data-sample="true">
+                        <th scope="row" class="is-sticky">Total Weekly Hours</th>
+                        <td data-bind="c1.hours">—</td>
+                        <td data-bind="c2.hours">—</td>
+                        <td data-bind="c3.hours">—</td>
+                      </tr>
+                      <tr data-sample="true">
+                        <th scope="row" class="is-sticky">Timetable Slot Conflict</th>
+                        <td>
+                          <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                            <span aria-hidden="true">✔</span>
+                            <span>None</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                            <span aria-hidden="true">✔</span>
+                            <span>None</span>
+                          </span>
+                        </td>
+                        <td>
+                          <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                            <span aria-hidden="true">✔</span>
+                            <span>None</span>
+                          </span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Empty State -->
+            <div class="eiq-state--empty">
+              <svg class="eiq-empty-illustration" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              <h3 class="eiq-empty-title">Comparison Unavailable</h3>
+              <p class="eiq-empty-text">At least two distinct valid combinations are needed to populate the comparative breakdown.</p>
+            </div>
+
+            <!-- Loading State -->
+            <div class="eiq-state--loading">
+              <div class="eiq-skeleton eiq-skeleton--card" style="height: 250px;"></div>
+            </div>
+
+            <!-- Error State -->
+            <div class="eiq-state--error">
+              <div class="eiq-error-title">Comparison Matrix Error</div>
+              <p class="eiq-error-msg">Could not compute side-by-side evaluation table.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================================================================
+             SECTION 5: TESTING
+             ================================================================== -->
+        <section id="testing" class="eiq-section" aria-labelledby="sec-title-testing">
+          <div class="eiq-section__header">
+            <div>
+              <h2 id="sec-title-testing" class="eiq-section__title">Comprehensive System Testing</h2>
+              <p class="eiq-section__subtitle">Run algorithm validation across all student records and export verification reports.</p>
+            </div>
+            <div style="display: flex; gap: 10px;">
+              <button type="button" class="eiq-btn eiq-btn--primary eiq-btn--sm" data-action="run-tests">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>Run test for all students</span>
+              </button>
+              <button type="button" class="eiq-btn eiq-btn--secondary eiq-btn--sm" data-action="download-csv">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download results as CSV</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Region: test-summary -->
+          <div data-region="test-summary" data-state="ready" aria-live="polite">
+            <div class="eiq-state--ready">
+              <div class="eiq-grid-12">
+                <div class="eiq-col-3">
+                  <div class="eiq-stat-tile eiq-stat-tile--blue">
+                    <span class="eiq-stat-tile__label">Total Tested</span>
+                    <span class="eiq-stat-tile__value" data-bind="test.total">—</span>
+                  </div>
+                </div>
+                <div class="eiq-col-3">
+                  <div class="eiq-stat-tile eiq-stat-tile--green">
+                    <span class="eiq-stat-tile__label">Full (3 Valid)</span>
+                    <span class="eiq-stat-tile__value" data-bind="test.full">—</span>
+                  </div>
+                </div>
+                <div class="eiq-col-3">
+                  <div class="eiq-stat-tile eiq-stat-tile--peach">
+                    <span class="eiq-stat-tile__label">Partial or None</span>
+                    <span class="eiq-stat-tile__value" data-bind="test.partialNone">—</span>
+                  </div>
+                </div>
+                <div class="eiq-col-3">
+                  <div class="eiq-stat-tile" style="background: linear-gradient(180deg, #FDE8E8 0%, #FFF5F5 100%);">
+                    <span class="eiq-stat-tile__label">Validation Failures</span>
+                    <span class="eiq-stat-tile__value" style="color: var(--eiq-bad);" data-bind="test.failures">—</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="eiq-state--empty">
+              <div class="eiq-card eiq-card--soft" style="text-align: center; padding: 24px;">
+                <p style="color: var(--eiq-ink-muted);">Test suite has not executed. Click 'Run test for all students' to initiate batch verification.</p>
+              </div>
+            </div>
+
+            <div class="eiq-state--loading">
+              <div class="eiq-skeleton eiq-skeleton--card" style="height: 94px;"></div>
+            </div>
+
+            <div class="eiq-state--error">
+              <div class="eiq-error-title">Test Summary Calculation Failed</div>
+            </div>
+          </div>
+
+          <!-- Region: test-results -->
+          <div data-region="test-results" data-state="ready" aria-live="polite">
+            <div class="eiq-state--ready">
+              <div class="eiq-card" style="padding: 0; overflow: hidden; margin-top: 14px;">
+                <div class="eiq-table-container">
+                  <table class="eiq-table" aria-label="Batch Test Verification Log">
+                    <caption class="visually-hidden">Per-student batch test results</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Student ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Combos Found</th>
+                        <th scope="col">Verification Status</th>
+                        <th scope="col">Reason / Notes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Repeatable template: test-row -->
+                      <template data-template="test-row">
+                        <tr>
+                          <td data-bind="test.studentId"></td>
+                          <td data-bind="test.studentName"></td>
+                          <td data-bind="test.combosCount"></td>
+                          <td>
+                            <span class="eiq-badge" data-status="valid" data-bind="test.status"></span>
+                          </td>
+                          <td data-bind="test.reason"></td>
+                        </tr>
+                      </template>
+
+                      <!-- Rendered placeholder row (blank / data-sample="true") -->
+                      <tr data-sample="true">
+                        <td data-bind="test.studentId">—</td>
+                        <td data-bind="test.studentName">—</td>
+                        <td data-bind="test.combosCount">—</td>
+                        <td>
+                          <span class="eiq-badge eiq-badge--valid" data-status="valid">
+                            <span aria-hidden="true">✔</span>
+                            <span>Full</span>
+                          </span>
+                        </td>
+                        <td data-bind="test.reason">—</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="eiq-state--empty">
+              <div class="eiq-state--empty">
+                <svg class="eiq-empty-illustration" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <h3 class="eiq-empty-title">No Test Logs Available</h3>
+                <p class="eiq-empty-text">Execute the verification suite to produce detailed per-student constraint audit logs.</p>
+              </div>
+            </div>
+
+            <div class="eiq-state--loading">
+              <div style="padding: 16px;">
+                <p style="font-size: 0.875rem; color: var(--eiq-ink-muted); margin-bottom: 8px;">Running constraint verification across student records...</p>
+                <div class="eiq-progress-segmented" style="--eiq-pct: 45;" data-score="45">
+                  <div class="eiq-progress-segmented__bar"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="eiq-state--error">
+              <div class="eiq-error-title">Verification Run Interrupted</div>
+              <p class="eiq-error-msg">A fatal exception occurred during batch student verification.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- System & Status Anchors for Navigation Completeness -->
+        <div id="data-status" class="visually-hidden" aria-hidden="true"></div>
+        <div id="help" class="visually-hidden" aria-hidden="true"></div>
+      </main>
+    </div>
+
+    <!-- PHASE 2: <script src="script.js" defer></script> -->
+  </body>
+</html>
